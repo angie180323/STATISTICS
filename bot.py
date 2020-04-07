@@ -19,14 +19,16 @@ async def say_hello(ctx):
 
 bot.run(TOKEN)
 
-n_num = [] 
+@bot.listen()
+async def (n_num = []) 
 n = len(n_num) 
   
 get_sum = sum(n_num) 
 mean = get_sum / n 
 print(mean)
 
-n_num = [] 
+@bot.listen()
+async def An_num = [] 
 n = len(n_num) 
 n_num.sort() 
   
