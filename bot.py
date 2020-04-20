@@ -17,6 +17,16 @@ async def on_ready():
 async def say_hello(ctx):
     await ctx.send(f"Hi {ctx.author.display_name}")
 
+@bot.command(name="mode", help= "To find the mode of numbers")
+async def mode(j, ctx):
+    A = str(max(j, key = j.count))
+    await ctx.send("Mode: " + A)
+
+@bot.command(name="summary", help="When you want to find all of the functions at once")
+async def summary(B, ctx):
+    J = median(B)
+    A = mode(B)
+    D = mean(B)
+    print(J,A,D)
+
 bot.run(TOKEN)
-
-
